@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ログインシステム</title>
+    <title>Login System</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,17 +57,17 @@
             aspect-ratio: 16 / 9;
             pointer-events: none;
             border-radius: 5px;
-            filter: blur(5px);
+            filter: blur(3px);
         }
 
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h2>ログイン</h2>
-        <input type="text" id="username" placeholder="ユーザー名">
-        <input type="password" id="password" placeholder="パスワード">
-        <button onclick="login()">ログイン</button>
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
         <div id="message"></div>
         <br>
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9J62hGda9BQ?si=A-aSalesofoaQyZU&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;disablekb=1&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -81,10 +81,10 @@
 
             // 簡単なユーザー名とパスワードのチェック
             if (username === 'user' && password === 'password') {
-                message.textContent = 'ログイン成功！';
+                message.textContent = 'Login successful!';
                 message.style.color = 'green';
             } else {
-                message.textContent = 'ユーザー名またはパスワードが間違っています。';
+                message.textContent = 'The user name or password is incorrect.';
                 message.style.color = 'red';
             }
         }
