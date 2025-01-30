@@ -12,6 +12,7 @@
             align-items: center;
             background: #fbfbfb;
             color: #333333;
+            animation:1s linear infinite rotation;
         }
         @media (prefers-color-scheme: dark) {
           body {
@@ -63,7 +64,10 @@
             pointer-events: none;
             border-radius: 5px;
         }
-
+        @keyframes rotation{
+            0%{ transform:rotate(0);}
+            100%{ transform:rotate(360deg); }
+        }
     </style>
 </head>
 <body>
